@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Men's Fashion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <header>
+    <div class="logo">Men's Fashion</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="html\shop.html">Shop</a></li>
+        <li><a href="html\blog.html">Blog</a></li>
+        <li><a href="html\contact.html">Contact</a></li>
+        <li><span class="icons">🛒</span></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<section class="hero-grid">
+    <div class="hero large">
+        <div class="hero-text">
+            <h2>WINTER SALE</h2>
+            <h1>75% OFF</h1>
+            <p>Checkout Our Hot Sale Products</p>
+            <button>SHOP PRODUCTS</button>
+        </div>
+    </div>
+
+    <div class="hero" style="background-image:url('images/men-1.jpg')">
+        <span>MENS WEAR</span>
+    </div>
+
+    <div class="hero" style="background-image:url('images/images.jpg')">
+        <span>HANDBAG</span>
+    </div>
+
+    <div class="hero" style="background-image:url('images/download.jpg')">
+        <span>SNEAKERS</span>
+    </div>
+</section>
+
+<div class="info-bar">
+    FREE UK DELIVERY · RETURN OVER £85.00 · FREE UK COLLECT FROM STORE
+</div>
+
+<section class="products">
+    <h2>TOP SELLING</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="images/images (1).jpg">
+            <h4>LONDON STAR SWEATSHIRT</h4>
+            <p>£85.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/images (2).jpg">
+            <h4>LONDON STAR SWEATSHIRT</h4>
+            <p>£85.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/download (3).jpg">
+            <h4>LONDON STAR SWEATSHIRT</h4>
+            <p>£85.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/download (4).jpg">
+            <h4>LONDON STAR SWEATSHIRT</h4>
+            <p>£85.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="newsletter-img" style="background-image:url('images/Custom-Newsletter-Design-Services-Mindbees.jpg')"></div>
+    <div class="newsletter-box">
+        <h3>NEWSLETTER</h3>
+        <p>Sign up for our Newsletter & Promotions</p>
+        <input type="email" placeholder="Your email address">
+        <button>SIGN UP</button>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>CONTACT US</h4><br>
+            <p>📍 Open Address in Google Maps<br><br>
+        <button class="map-btn" onclick="openMap()">Open in Google Maps </button></p>
+        </div>
+
+        <div>
+            <h4>OUR SERVICES</h4><br>
+            <p>About us</p><br>
+            <p>Order History</p><br>
+            <p>Returns</p><br>
+        </div>
+
+        <div>
+            <h4>FOLLOW US</h4><br>
+            <p>Facebook | Twitter | Instagram</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        alert("Coming soon!");
+    });
+});
+document.getElementById("year").textcontent = new Date().getFullYear();
+    function openMap() {
+      const address =
+        "46+Skabersjogatan+Malmo+Sweden";
+      const mapURL =
+        "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+      window.open(mapURL, "_blank");
+    }
+</script>
+</body>
+</html>

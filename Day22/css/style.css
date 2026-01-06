@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  color: #f4c10f;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 15px;
+    padding: 40px 60px;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero:hover {
+    transform: translateY(-2px)
+}
+
+.hero.large {
+    background-image:url(../images/istockphoto-1065840316-612x612.jpg);
+    grid-row: span 2;
+}
+
+.hero span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 600;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.hero-text button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #c9a14a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero-text button:hover{
+    transform: translateY(-4px);
+}
+
+.info-bar {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #5e5d5d;
+    border-bottom: 1px solid #5e5d5d;
+}
+
+.products {
+    padding: 60px;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.products :hover {
+    transform: translateY(-2px);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    margin-top: 40px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 8px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background: #c9a14a;
+    transform: translateY(-2px)
+}
+
+.newsletter {
+    display: flex;
+    padding: 60px;
+}
+
+.newsletter-img {
+    flex: 1;
+    background-size: cover;
+}
+
+.newsletter-box {
+    flex: 1;
+    border: 1px solid #c9a14a;
+    padding: 40px;
+}
+
+.newsletter-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-box button {
+    margin-top: 15px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-box button:hover {
+    background: #c9a14a;
+    transform: scale(1.1);
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    padding: 50px;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-grid p:hover {
+  color: #f4c10f;
+}
+
+.map-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.map-btn:hover {
+  background: #ea9a9a;
+}
+
